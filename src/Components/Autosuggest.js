@@ -17,7 +17,7 @@ class Autosuggest extends Component {
   }
   componentDidMount() {
     axios
-      .post("https://dev.kwiat.com/KWUpgrade/entity/auth/login", {
+      .post("https://cors-anywhere.herokuapp.com/https://dev.kwiat.com/KWUpgrade/entity/auth/login", {
         name: "admin",
         password: "kwiat",
       })
@@ -28,7 +28,7 @@ class Autosuggest extends Component {
         // console.log("error");
       });
     axios
-      .get("https://gentle-garden-48168.herokuapp.com/")
+      .get("https://cors-anywhere.herokuapp.com/https://gentle-garden-48168.herokuapp.com/")
       .then(function (response) {
         console.log("response", response);
       });
